@@ -48,7 +48,22 @@
       </section>
 
       <section class="view" id="studentsView">
-        <div class="section-toolbar"><div><h2>Student directory</h2><p>Add students and create their personal QR identity cards.</p></div><button class="btn btn-primary" id="addStudentBtn">＋ Add student</button></div>
+        <div class="section-toolbar">
+  <div>
+    <h2>Student directory</h2>
+    <p>Add students and capture their faces.</p>
+  </div>
+
+  <div>
+    <button class="btn btn-primary" id="captureFaceBtn">
+      📷 Capture Face
+    </button>
+
+    <button class="btn btn-primary" id="addStudentBtn">
+      ＋ Add student
+    </button>
+  </div>
+</div>
         <div class="panel"><div class="table-tools"><input id="studentSearch" placeholder="Search by name, class or student ID…" /><span id="studentCountLabel" class="muted">0 students</span></div><div class="table-scroll"><table><thead><tr><th>STUDENT</th><th>STUDENT ID</th><th>CLASS</th><th>QR ID</th><th>FACE PROFILE</th><th>ACTIONS</th></tr></thead><tbody id="studentsTable"></tbody></table></div></div>
       </section>
 
